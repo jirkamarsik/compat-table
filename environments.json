@@ -4972,8 +4972,8 @@
     "note_id": "graalvm-node-mode",
     "note_html": "Executed in Node.js/JVM mode via <code>graalvm/bin/node --jvm</code>.",
     "release": "2019-05-09",
-    "unstable": false,
     "obsolete": true,
+    "unstable": false,
     "test_suites": [
       "es5",
       "es6",
@@ -4991,7 +4991,7 @@
     "note_id": "graalvm-node-mode",
     "note_html": "Executed in Node.js/JVM mode via <code>graalvm/bin/node --jvm</code>.",
     "release": "2021-01-19",
-    "equals": "graalvm19",
+    "obsolete": true,
     "unstable": false,
     "test_suites": [
       "es5",
@@ -5011,8 +5011,8 @@
     "note_html": "Executed in Node.js/JVM mode via <code>graalvm/bin/node --jvm</code>.",
     "release": "2020-02-18",
     "retire": "2020-05-19",
-    "unstable": false,
     "obsolete": true,
+    "unstable": false,
     "test_suites": [
       "es5",
       "es6",
@@ -5030,7 +5030,6 @@
     "note_id": "graalvm-node-mode",
     "note_html": "Executed in Node.js/JVM mode via <code>graalvm/bin/node --jvm</code>.",
     "release": "2020-05-19",
-    "equals": "graalvm20",
     "obsolete": true,
     "unstable": false,
     "test_suites": [
@@ -5050,7 +5049,6 @@
     "note_id": "graalvm-node-mode",
     "note_html": "Executed in Node.js/JVM mode via <code>graalvm/bin/node --jvm</code>.",
     "release": "2020-11-17",
-    "equals": "graalvm20_1",
     "obsolete": true,
     "unstable": false,
     "test_suites": [
@@ -5070,8 +5068,7 @@
     "note_id": "graalvm-node-mode",
     "note_html": "Executed in Node.js/JVM mode via <code>graalvm/bin/node --jvm</code>.",
     "release": "2021-01_19",
-    "equals": "graalvm20_3",
-    "obsolete": false,
+    "obsolete": true,
     "unstable": false,
     "test_suites": [
       "es5",
@@ -5090,7 +5087,6 @@
     "note_id": "graalvm-node-mode",
     "note_html": "Executed in Node.js/JVM mode via <code>graalvm/bin/node --jvm</code>.",
     "release": "2021-01-19",
-    "equals": "graalvm20_3",
     "obsolete": false,
     "unstable": false,
     "test_suites": [
