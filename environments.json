@@ -5087,6 +5087,25 @@
     "note_id": "graalvm-node-mode",
     "note_html": "Executed in Node.js/JVM mode via <code>graalvm/bin/node --jvm</code>.",
     "release": "2021-01-19",
+    "obsolete": true,
+    "unstable": false,
+    "test_suites": [
+      "es5",
+      "es6",
+      "es2016plus",
+      "esnext",
+      "esintl",
+      "non-standard"
+    ]
+  },
+  "graalvm21_3_3": {
+    "full": "GraalVM JavaScript 21.3.3",
+    "family": "GraalVM",
+    "short": "GraalVM 21.3.3",
+    "platformtype": "engine",
+    "note_id": "graalvm-js-mode",
+    "note_html": "Executed using the <code>js</code> launcher (tests using <code>setTimeout</code> were run using the <code>node</code> launcher).",
+    "release": "2022-07-26",
     "obsolete": false,
     "unstable": false,
     "test_suites": [
