@@ -1684,7 +1684,7 @@ exports.tests = [
     android4_0: true,
     duktape2_0: false,
     graalvm19: true,
-    graalvm21_3_3: graalvm.v8CompatFlag
+    graalvm21_3_3: true
   }
 },
 {
@@ -1818,7 +1818,7 @@ exports.tests = [
       note_id: 'graalvm-nashorn-compat',
       note_html: 'The feature has to be enabled via the <code>--nashorn-compat</code> flag.'
     },
-    graalvm21_3_3: graalvm.nashornCompatFlag
+    graalvm21_3_3: false
   }
 },
 {
@@ -1942,7 +1942,7 @@ exports.tests = [
     nashorn9: true,
     nashorn10: true,
     graalvm19: false,
-    graalvm21_3_3: graalvm.nashornCompatFlag
+    graalvm21_3_3: false
   }
 },
 {
@@ -1998,7 +1998,7 @@ exports.tests = [
     nashorn9: true,
     nashorn10: true,
     graalvm19: false,
-    graalvm21_3_3: graalvm.nashornCompatFlag
+    graalvm21_3_3: false
   }
 },
 {
@@ -2524,7 +2524,7 @@ exports.tests = [
     nashorn9: true,
     nashorn10: true,
     graalvm19: false,
-    graalvm21_3_3: graalvm.nashornCompatFlag
+    graalvm21_3_3: false
   }
 },
 {
@@ -2552,7 +2552,7 @@ exports.tests = [
     nashorn9: true,
     nashorn10: true,
     graalvm19: false,
-    graalvm21_3_3: graalvm.nashornCompatFlag
+    graalvm21_3_3: false
   }
 },
 {
@@ -2636,7 +2636,6 @@ exports.tests = [
         duktape2_1: true,
         duktape2_5: false,
         graalvm19: true,
-        graalvm21_3_3: graalvm.globalPropertyFlag,
         rhino1_7_13: false
       }
     }, {
