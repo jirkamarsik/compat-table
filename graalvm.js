@@ -22,7 +22,7 @@ var environments = JSON.parse(fs.readFileSync('environments.json').toString());
 var flagsForSuite = {
     'data-es5': [ [ '--js.ecmascript-version=5' ] ],
     'data-es6': [ [ '--js.ecmascript-version=6' ] ],
-    'data-es2016plus': [ [ '--js.ecmascript-version=latest' ] ],
+    'data-es2016plus': [ [ '--js.ecmascript-version=latest' ], [ '--js.ecmascript-version=staging' ] ],
     'data-esnext': [ [ '--js.ecmascript-version=staging' ], [ '--experimental-options', '--js.new-set-methods' ] ],
     'data-esintl': [ [ '--js.intl-402' ] ],
     'data-non-standard': [ [ '--experimental-options', '--js.nashorn-compat' ], [ '--experimental-options', '--js.v8-compat' ], [ '--experimental-options', '--js.global-property' ] ]
@@ -115,7 +115,7 @@ function executeTestScript(testScriptFilename, suite) {
             return {
                 val: 'flagged',
                 note_id: ('graalvm-' + flags.join('-')).replace(/[=\.]/g, '-').replace(/-+/g, '-'),
-                note_html: 'Requires the <code>' + flags.join(' ') + '</code> flag' + flags.length > 1 ? 's' : '' + '.'
+                note_html: 'Requires the <code>' + flags.join(' ') + '</code> flag' + (flags.length > 1 ? 's' : '') + '.'
             };
         }
     }
