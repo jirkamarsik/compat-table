@@ -11878,7 +11878,7 @@ exports.tests = [
         safari10: true,
         duktape2_0: true,
         graalvm19: true,
-        graalvm22_2: graalvm.es6flag,
+        graalvm22_2: graalvm.es2021flag,
         jerryscript2_0: false,
         jerryscript2_3_0: true,
         hermes0_7_0: true,
