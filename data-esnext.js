@@ -1393,6 +1393,7 @@ exports.tests = [
         safaritp: true,
         duktape2_0: false,
         graalvm21_3_3: false,
+        graalvm22_2: graalvm.esStagingFlag,
         rhino1_7_13: false
       }
     },
@@ -1420,6 +1421,7 @@ exports.tests = [
         safaritp: true,
         duktape2_0: false,
         graalvm21_3_3: false,
+        graalvm22_2: graalvm.esStagingFlag,
         rhino1_7_13: false
       }
     }
