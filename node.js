@@ -60,6 +60,8 @@ $('#body tbody tr').each(function (index) {
   var resultInTable = $(this).find('td[data-browser=' + engineId + ']');
   if (resultInTable.hasClass('yes')) {
       expected[index] = true;
+  } else if (resultInTable.hasClass('flagged')) {
+      expected[index] = 'flagged';
   } else if (resultInTable.hasClass('no')) {
       expected[index] = false;
   }
@@ -73,9 +75,10 @@ process.on('exit', function(){
     if (result === null) {
       console.log('\u25BC\t' + name.replace('§',''));
     } else {
-      var matching = result && expectedResult || !result && !expectedResult;
+      var matching = Boolean(result) === expectedResult;
+      var flagged = expectedResult === 'flagged';
       var highlight = matching ? function (x) { return x; } : chalk[result === "Strict" ? 'cyan' : result ? 'green' : 'red'];
-      console.log(highlight((result ? '\u2714' : '\u2718') + (matching ? '' : ' DIFF') + '\t' + (name[0]!== '§' ? '\t' + name : name.slice(1)) + '\t'));
+      console.log(highlight((result ? '\u2714' : '\u2718') + (matching ? '' : flagged ? ' \u2691' : ' DIFF') + '\t' + (name[0]!== '§' ? '\t' + name : name.slice(1)) + '\t'));
     }
   });
 });
